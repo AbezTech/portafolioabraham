@@ -1,0 +1,142 @@
+*{
+   font-family: 'Roboto Serif', sans-serif;
+}
+.cabecera{
+    width: 100%;
+    background-color: #ecf0f3;
+}
+.contenedornav{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.navprincipal{
+    width: 100%;
+  
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    gap:3rem;
+    align-items: center;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+li a:link,
+li a:visited{
+    color: black;
+    text-decoration: none;
+}
+.botonregistro{
+    background-color:#298939;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+}
+.banner1{
+    width: 100%;
+    background-color: #ecf0f3;
+}
+.contenedorbanner1{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin: 0 auto;
+    gap: 4rem;
+    
+
+}
+.fotobanner1 img.imagenbanner1{
+    width: 100%;
+}
+.fotobanner1, .tituloprincipal{
+    width: 100%;
+}
+.fotobanner1{
+    margin-left: 3rem;
+}
+.tituloprincipal{
+    margin-left: 3rem;
+    line-height:4.5rem;
+}
+.saludo{
+    font-size: 5rem;
+}
+.VerMas{
+    margin-top: 2.5rem;
+    background-color:#298939;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.VerMas a:link,
+.VerMas a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.tecnologias{
+    width: 100%;
+    background-color: #ecf0f3;
+}
+.contenedortecnologias{
+    width: 80%;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+}
+.contenedortecnologias img{
+    width: 8rem;
+}
+@media (max-width:950px){
+    .contenedornav{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorbanner1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tituloprincipal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 3rem;
+        text-align: center;
+    }
+    .saludo{
+        font-size: 3.5rem;
+    }
+    .fotobanner1{
+        width: 50%;
+    }
+    .VerMas{
+        margin-right: 2rem;
+    }
+}
+@media (max-width:600px){
+    .menu .sobremi,.experiencia{
+        display: none;
+    }
+}
